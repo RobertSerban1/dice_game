@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Dice Game</title>
+</head>
+
+<body style="font-family: 'Nunito', sans-serif; background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);">
+
+    <main class="container-fluid d-flex flex-wrap justify-content-center align-items-start vh-100 p-4">
+        <!-- Player 1 -->
+        <div class="col-12 col-md-4 mb-4 mt-md-5">
+            <section class="player player--0 player--active text-center">
+                <h2 class="name" id="name--0">Player 1</h2>
+                <p class="score" id="score--0">43</p>
+                <div class="current bg-primary text-white rounded p-3">
+                    <p class="current-label mb-2 text-uppercase">Current</p>
+                    <p class="current-score" id="current--0">0</p>
+                </div>
+            </section>
+        </div>
+        <style>
+          @media (min-width: 768px) {
+              .custom-margin-top-md {
+                  margin-top: 6.5rem !important;
+              }
+          }
+          </style>
+          
+        <!-- Dice -->
+        <div class="col-12 col-md-4 mt-sm-4 custom-margin-top-md">
+          <div class="d-flex justify-content-center align-items-center">
+              <img src="images/dice-5.png" alt="Playing dice" class="dice" style="height: 10rem; width: auto;" />
+          </div>
+      </div>
+      
+      
+
+        <!-- Player 2 -->
+        <div class="col-12 col-md-4 mt-5 mb-4 mt-md-5">
+            <section class="player player--1 text-center">
+                <h2 class="name" id="name--1">Player 2</h2>
+                <p class="score" id="score--1">24</p>
+                <div class="current bg-primary text-white rounded p-3">
+                    <p class="current-label mb-2 text-uppercase">Current</p>
+                    <p class="current-score" id="current--1">0</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+            <button class="btn btn-lg btn-secondary btn--new mb-2">🔄 New game</button>
+            <button class="btn btn-lg btn-primary btn--roll mb-2 mt-2">🎲 Roll dice</button>
+            <button class="btn btn-lg btn-success btn--hold mt-2">📥 Hold</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
